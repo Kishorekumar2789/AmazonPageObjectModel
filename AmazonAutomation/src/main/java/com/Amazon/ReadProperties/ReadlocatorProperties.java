@@ -28,21 +28,18 @@ public class ReadlocatorProperties {
 		}catch(FileNotFoundException e){
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 	
-		//ReadlocatorProperties.getValue();
+		
 	
 }
 	
 
  public  static String getValue(String element){
 	 String locator=prop.getProperty(element);
-	// System.out.println("locator"+ locator);
-	 
-	
-	 return locator;
+	return locator;
 	
 }
 }

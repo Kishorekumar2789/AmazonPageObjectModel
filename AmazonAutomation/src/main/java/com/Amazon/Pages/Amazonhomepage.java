@@ -62,15 +62,9 @@ public static WebElement element;
 	
 	public  void selectvalueasBook() throws Exception{
 		
-		System.out.println("dropdown value is "+dropdown);
-		System.out.println("dropdownselector: "+dropdownselector);
-		
-		
-		selectmethod(dropdown,dropdownselector,driver);
+	selectmethod(dropdown,dropdownselector,driver);
 		
 }
-	
-	
 	public static void enterSearchKeyword() throws Exception{
 		
 		enterText(searchbox,SearchKeyword,driver);

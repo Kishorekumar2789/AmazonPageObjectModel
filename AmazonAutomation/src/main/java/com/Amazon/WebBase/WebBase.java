@@ -63,7 +63,7 @@ public class WebBase {
 		 }
 		 
 		URL=readtestdata.Amazonurl;
-	      System.out.println("Browser setup: "+URL);
+		
 }
 	 
 	 

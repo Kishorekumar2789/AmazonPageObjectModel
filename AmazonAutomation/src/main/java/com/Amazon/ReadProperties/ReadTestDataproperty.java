@@ -33,7 +33,6 @@ public class ReadTestDataproperty {
 	
 	    TEST_ROOT_DIR = System.getProperty("user.dir");
 		try{
-			System.out.println("from setupParam ");
 			fis=new FileInputStream(TEST_ROOT_DIR+File.separator+PROP_FILE);
 			
 		}catch(FileNotFoundException e){
@@ -54,7 +53,7 @@ public class ReadTestDataproperty {
 		if(prop.getProperty("Chromebrowser")!=null && !(prop.getProperty("Chromebrowser").equalsIgnoreCase(""))){
 			
 			Browser=prop.getProperty("Chromebrowser");
-			System.out.println("from setupParam"+Browser);
+			
 		}
           if(prop.getProperty("FirefoxBroser")!=null && !(prop.getProperty("FirefoxBroser").equalsIgnoreCase(""))){
 			
@@ -125,7 +124,7 @@ public class ReadTestDataproperty {
   			
         	  Amazonurl=prop.getProperty("Amazonurl");
         	  
-        	  System.out.println("Amazonurl setup:"+Amazonurl);
+        	  
     	}
           if(prop.getProperty("firefoxprofile")!=null && !(prop.getProperty("firefoxprofile").equalsIgnoreCase(""))){
     			
@@ -138,17 +137,13 @@ public class ReadTestDataproperty {
  
  public  static String getTestdata(String element){
 	 String locator=prop.getProperty(element);
-	 System.out.println("locator from ReadTestDataproperty "+ locator);
-	 
-	
-	 return locator;
+	  return locator;
 	
 }
  
  
  public static By getelementlocator(String propKey) throws Exception{
-	 
-	   System.out.println("propKey :"+propKey);
+
 		String[] split = propKey.split(";");
 		String type = split[0];
 
